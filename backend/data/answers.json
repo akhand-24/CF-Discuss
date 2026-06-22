@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "5y47x3m",
+    "questionId": "9ok50h9",
+    "body": "Here is a Python version using range updates.",
+    "code": "def update(node, start, end, idx, val):\n    if start == end:\n        tree[node] = val\n        return\n    mid = (start + end) // 2\n    if idx <= mid:\n        update(2*node, start, mid, idx, val)\n    else:\n        update(2*node+1, mid+1, end, idx, val)\n    tree[node] = tree[2*node] + tree[2*node+1]",
+    "codeLanguage": "python",
+    "author": "17va9mt",
+    "upvotes": [],
+    "downvotes": [],
+    "score": 0,
+    "comments": [],
+    "createdAt": "2026-06-22T18:30:38.631Z",
+    "updatedAt": "2026-06-22T18:30:38.631Z"
+  }
+]
